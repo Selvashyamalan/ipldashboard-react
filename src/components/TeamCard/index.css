@@ -1,54 +1,60 @@
-.team-link {
-  text-decoration: none;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  border-radius: 12px;
-  background-color: #ffffff33;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 45%;
-  height: 130px;
-  padding: 10px;
-}
-.team-list-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-}
-.team-image {
-  width: 60px;
-  height: 60px;
-}
-.team-name {
-  color: #ffffff;
-  font-family: 'Bree serif';
-  text-align: center;
-  font-size: 15px;
-  margin: 0;
-}
-
-@media (min-width: 576px) {
-  .team-image {
-    width: 70px;
-    height: 70px;
-  }
-  .team-name {
-    font-size: 18px;
-  }
-}
-@media (min-width: 768px) {
-  .team-image {
-    width: 80px;
+/* Write your CSS here */
+@media only screen and (max-width: 767px) {
+  .team-list-item-container {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-right: 10px;
     height: 80px;
+    padding: 10px;
+    border: 1px solid gray;
+    width: 44%;
+    background-color: #ffffff33;
+    border-radius: 5px;
+    list-style-type: none;
   }
-  .team-name {
-    font-size: 22px;
+  .team-card-list-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .team-card-img {
+    width: 40px;
+    margin-right: 10px;
+  }
+  .team-card-name {
+    font-family: 'Bree Serif';
+    color: #ffffff;
+    margin-right: 7px;
+    font-size: 10px;
+    font-weight: normal;
   }
 }
-* {
-  /* border: 1px solid red; */
+
+@media only screen and (min-width: 768px) {
+  .team-list-item-container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    height: 130px;
+    padding: 10px;
+    border: 1px solid gray;
+    width: 40vw;
+    background-color: #ffffff33;
+    border-radius: 5px;
+  }
+  .team-card-list-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .team-card-img {
+    width: 70px;
+  }
+  .team-card-name {
+    font-family: 'Bree Serif';
+    color: #ffffff;
+
+    font-size: 23px;
+    font-weight: normal;
+  }
 }
